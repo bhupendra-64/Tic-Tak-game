@@ -40,3 +40,35 @@ body{
     margin-left: 430px;
     display: none;
 }
+/* responsive */
+@media(width<=400px) {
+    h1{
+        text-align: center;
+    }
+    .game{
+        margin-top: 80px;
+        margin-left:35px;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .btn{
+        text-align: center;
+        height: 98px;
+        width:98px;
+        margin-right: 2px;
+        border-radius: 5px;
+        font-size: 90px;
+        box-shadow: #798478;
+        background-color: black;
+        color: aliceblue;
+    }
+    #reset{
+        margin-top: 50px;
+        margin-left:140px;
+    }
+
+    
+}
