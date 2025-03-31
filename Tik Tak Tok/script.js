@@ -2,6 +2,7 @@ let btn=document.querySelectorAll(".btn");
 let a="X";
 let reset=document.querySelector("#reset")
 let msg=document.querySelector(".name")
+let m=document.querySelector(".winMasage")
 const win=[
     [0,1,2],
     [0,3,6],
@@ -20,6 +21,8 @@ reset.addEventListener("click",()=>{
     for(let a of btn){
         a.disabled=false;
         a.innerText="";
+        m.classList.add("hide");
+
         
     }
     
@@ -56,7 +59,9 @@ const winner = () =>{
                 console.log("winner Is",val1)
             
                 box();
-                alert(val1,"Is Winner");
+                m.classList.remove("hide");
+                m.innerHTML=`Winner is ${val1}`;
+                
                 
                
                 

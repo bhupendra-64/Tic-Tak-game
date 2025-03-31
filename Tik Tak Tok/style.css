@@ -25,10 +25,16 @@ h1{
 }
 
 #reset{
+    outline: none;
+    height: 40px;
+    border: solid rgb(0, 0, 0) 3px ;
+    width: 100px;
     margin-top: 50px;
     margin-left: 580px ;
-    background-color: #EAE0CC;
-    border-radius: 50px;
+    background-color: rgba(0, 128, 0, 0.571);
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: bold;
 }
 body{
     background-color: #798478;
@@ -40,8 +46,41 @@ body{
     margin-left: 430px;
     display: none;
 }
+.winMasage{
+    position: absolute;
+    top:90px;
+    
+    height: 20vw;
+    width:100vw;
+    background-color :rgba(255, 255, 255, 0.194);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10vw;
+    
+    
+
+}
+.hide{
+    display: none;
+}
+.winMasage h2{
+    margin-top: 10%;
+}
 /* responsive */
 @media(width<=400px) {
+    .winMasage{
+        position: absolute;
+        top:100px;
+        height: 30vh;
+        
+        width:100vw;
+       
+        padding-top: 39vw;
+        
+        
+    
+    }
     h1{
         text-align: center;
     }
@@ -68,6 +107,9 @@ body{
     #reset{
         margin-top: 50px;
         margin-left:140px;
+    }
+    .winMasage{
+        top:139px;
     }
 
     
